@@ -1,9 +1,19 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
 public class Test {
 
     public static void main(String[] args) {
-        int[][] test = {{1, 3, 5, 7, 9}, {10, 15, 17, 18, 19}, {21, 23, 25, 28, 29}, {31, 35, 36, 38, 39}};
+//        int[][] test = {{1, 3, 5, 7, 9}, {10, 15, 17, 18, 19}, {21, 23, 25, 28, 29}, {31, 35, 36, 38, 39}};
+//
+//        System.out.println(func(test, 31));
+        List<Integer> a = new LinkedList<>();
+        a.add(1);
 
-        System.out.println(func(test, 31));
+//        a.set(0, 2);
+
+        System.out.println(a.get(0));
     }
 
 

@@ -1,8 +1,8 @@
-package ct;
+package boj.bruteforce;
 
 import java.util.Scanner;
 
-public class NAndM03 {
+public class NAndM04 {
 
     static int N;
     static int M;
@@ -29,9 +29,7 @@ public class NAndM03 {
             }
             sb.append('\n');
         } else {
-            int start = array[k-1];
-            if(start == 0) start = 1;
-            for (int cand = start; cand <= N; cand++) {
+            for (int cand = array[k - 1] + 1; cand <= N; cand++) {
                 array[k] = cand;
                 func(k + 1);
                 array[k] = 0;

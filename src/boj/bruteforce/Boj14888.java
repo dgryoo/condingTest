@@ -1,4 +1,4 @@
-package ct;
+package boj.bruteforce;
 
 import java.util.Arrays;
 import java.util.Scanner;

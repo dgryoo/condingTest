@@ -1,8 +1,8 @@
-package ct;
+package boj.bruteforce;
 
 import java.util.Scanner;
 
-public class NAndM04 {
+public class NAndM01 {
 
     static int N;
     static int M;
@@ -24,12 +24,21 @@ public class NAndM04 {
 
     public static void func(int k) {
         if (k == M + 1) {
-            for (int index = 1; index <= M; index++) {
-                sb.append(array[index]).append(" ");
+//            for (int index = 1; index <= M; index++) {
+//                sb.append(array[index]).append(" ");
+//            }
+//            sb.append('\n');
+            String result = "";
+            for(int index = 1; index <= M; index++) {
+                if(index !=M) {
+                    result = result + array[index] + " ";
+                } else {
+                    result = result + array[index];
+                }
             }
-            sb.append('\n');
+            System.out.println(result);
         } else {
-            for (int cand = array[k - 1] + 1; cand <= N; cand++) {
+            for (int cand = 1; cand <= N; cand++) {
                 array[k] = cand;
                 func(k + 1);
                 array[k] = 0;

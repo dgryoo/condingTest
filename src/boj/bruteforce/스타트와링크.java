@@ -1,4 +1,4 @@
-package fastcampus.bruteforce;
+package boj.bruteforce;
 
 import java.util.Scanner;
 
